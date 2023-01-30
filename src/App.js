@@ -3,10 +3,11 @@ import "./App.css";
 import { Login } from "./components/Login/Login";
 import { Dashboard } from "./components/Dashboard/Dashboard";
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { Artist } from "./components/Dashboard/Artist";
 import { Songs } from "./components/Dashboard/Songs";
 import { Playlist } from "./components/Dashboard/Playlist";
+
 
 function App() {
   return (
