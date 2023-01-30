@@ -8,18 +8,17 @@ import { Artist } from "./components/Dashboard/Artist";
 import { Songs } from "./components/Dashboard/Songs";
 import { Playlist } from "./components/Dashboard/Playlist";
 
-
 function App() {
   return (
     <>
       <Router>
-        <Switch>
-          <Route exact path="/" component={Login} />
+        <div>
+          <Route exact path="/login" component={Login} />
           <Route exact path="/dashboard" component={Dashboard} />
           <Route exact path="/artist" component={Artist} />
-          <Route exact path="/songs" component={Songs}/>
-          <Route exact path="/playlist" component={Playlist}/>
-        </Switch>
+          <Route exact path="/songs" component={Songs} />
+          <Route exact path="/playlist" component={Playlist} />
+        </div>
       </Router>
     </>
   );
